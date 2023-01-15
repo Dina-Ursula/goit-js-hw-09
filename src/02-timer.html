@@ -8,24 +8,56 @@
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
+    <div
+      style="
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+      "
+    >
+      <input
+        type="text"
+        id="datetime-picker"
+        style="border: 3px solid teal; border-radius: 8px; margin-right: 5px"
+      />
+      <button
+        type="button"
+        data-start
+        style="
+          border-radius: 8px;
+          border: 3px solid teal;
+          margin-right: 5px;
+          font-size: medium;
+        "
+      >
+        Start
+      </button>
+    </div>
 
-    <input type="text" id="datetime-picker" />
-    <button type="button" data-start>Start</button>
-
-    <div class="timer">
-      <div class="field">
+    <div
+      class="timer"
+      style="
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: large;
+      "
+    >
+      <div class="field" style="margin-left: 10px; font-size: large">
         <span class="value" data-days>00</span>
         <span class="label">Days</span>
       </div>
-      <div class="field">
+      <div class="field" style="margin-left: 10px; font-size: large">
         <span class="value" data-hours>00</span>
         <span class="label">Hours</span>
       </div>
-      <div class="field">
+      <div class="field" style="margin-left: 10px; font-size: large">
         <span class="value" data-minutes>00</span>
         <span class="label">Minutes</span>
       </div>
-      <div class="field">
+      <div class="field" style="margin-left: 10px; font-size: large">
         <span class="value" data-seconds>00</span>
         <span class="label">Seconds</span>
       </div>
